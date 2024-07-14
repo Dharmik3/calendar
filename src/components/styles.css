@@ -1,0 +1,62 @@
+.calenderHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.todayBtn {
+  margin-right: 1rem;
+}
+
+table,
+tr,
+td,
+th {
+  border-collapse: collapse;
+  border: 1px solid gray;
+  padding: 40px;
+}
+
+
+.container {
+  margin: 20px auto;
+  max-width: 770px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cellContainer {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  max-width: 770px;
+}
+
+.cell {
+  border: 1px solid gray;
+  display: flex;
+  justify-content: flex-end;
+  max-width: 110px;
+  max-height: 110px;
+    padding: 10px 5px 90px 90px;
+}
+.currentDateCell {
+    width: 50px;
+    height:25px;
+    padding: 5px;
+    border-radius: 50%;
+    color: black;
+  background-color: rgb(235, 98, 98);
+}
+
+.cellHeader {
+  font-weight: bold;
+  padding: 5px 40px;
+  border: 1px solid grey;
+  max-width: 110px;
+
+}
+
+.deamCell {
+  color: rgb(206, 206, 206);
+}
