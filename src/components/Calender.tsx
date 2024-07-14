@@ -115,7 +115,6 @@ const Calender = () => {
 
   const days = Array.from({ length: 7 }, (_, i) => i);
 
-  console.log(prevMonth, currentMonth, nextMonth);
   return (
     <div className="container">
       <div className="calenderHeader">
