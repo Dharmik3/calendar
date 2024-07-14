@@ -1,30 +1,66 @@
-# React + TypeScript + Vite
+# The Calendar is developed without using the external library
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Tech stack used
 
-Currently, two official plugins are available:
+- React + Typescript
+- CSS
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Calendar Features
 
-## Expanding the ESLint configuration
+This calendar interface provides a user-friendly way to view and navigate dates. Below are the key functionalities:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+**1. Month and Year Display:**
 
-- Configure the top-level `parserOptions` property like this:
+- Displays the current month and year at the top left (e.g., "July 2024").
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+**2. Date Navigation:**
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- Today Button: Quickly navigate back to the current date.
+- Previous and Next Month Buttons: Navigate to the previous or next month using the "<" and ">" buttons.
+
+**3.Weekdays Header:**
+
+- Lists the days of the week from Sunday to Saturday at the top of the calendar grid.
+
+**4. Calendar Grid:**
+
+- Displays all the days of the current month in a grid format.
+- Each cell represents a day, organized in weekly rows starting from Sunday and ending on Saturday.
+- Days from the previous or next month are either left blank or grayed out to focus on the current month.
+
+**5. Current Date Highlight:**
+
+- Highlights the current date with a distinctive red circle for easy identification.
+
+## How to setup locally
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) (Ensure you have Node.js installed)
+
+### Installation
+
+1. **Clone the repository**
+   ```sh
+   git clone hhttps://github.com/Dharmik3/calendar.git
+   ```
+2. Navigate to the project directory
+
+   ```sh
+   cd calendar
+   ```
+
+3. Install dependencies
+   ```sh
+   npm install
+   ```
+
+4. Start the application
+    ```sh
+    npm run dev
+    ```
+5. Open your browser and navigate to
+    ```sh
+    http://localhost:5173/
+    ```
+    **Note:** If already other app is running on this (5173) port then see the terminal, that will start the app in another port , so kindly navigate to that url and port
